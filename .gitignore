@@ -1,129 +1,121 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Practice
+print("\n")
+print("Number 1 is 10 \nNumber 2 is 20")
+print("\n")
+number1 = 10
+number2 = 20
 
-# C extensions
-*.so
+# 1. Addition +
+summation = number1 + number2
+print("The summation of number1 and number2 is:   ", summation)
+print("\n")
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+# 2, Subtraction -
+subtraction = number1 - number2
+print("The su btraction of number2 from number1 is:   ", subtraction)
+print("\n")
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+# 3. Multiplication *
+multiplication = number1 * number2
+print("The multiplication of number1 and number2 is:   ", multiplication)
+print("\n")
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+# 4. FloatDivision /
+division = number1 / number2
+print("The FloatDivision of number1 by number2 is:   ", division)
+print("\n")
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
+# 5. Remainder %
+"""Needs different number for calculation of remainder"""
 
-# Translations
-*.mo
-*.pot
+r1 = 20
+r2 = 3
+remainder = r1 % r2
+print("The remainder of 20 % 3 is:   ", remainder)
+print("\n")
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
+# 6. IntegerDivision //
+"""Integer division is a division without the decimal point shown"""
 
-# Flask stuff:
-instance/
-.webassets-cache
+integerDivision = r1 // r2
+print("The IntegerDivision of 20 and 3 is:   ", integerDivision)
+print("\n")
 
-# Scrapy stuff:
-.scrapy
+# 7. Exponential ** means to the power
 
-# Sphinx documentation
-docs/_build/
+exponential = 2 ** 3
+print("The exponential; 2 to the power of 3 is:   ", exponential)
+print("\n")
 
-# PyBuilder
-target/
+# Concatenation of words
 
-# Jupyter Notebook
-.ipynb_checkpoints
+c1 = "Tohibur "
+c2 = "Rahman"
+c3 = "Tauhid"
 
-# IPython
-profile_default/
-ipython_config.py
+C = c1 + c2 + c3
+print(r"The concatenation of", "Tohibur ", "Rahman" "Tauhid", "is:   ", C)
+print("\n")
 
-# pyenv
-.python-version
+# Concatenation of number
 
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
+cn1 = 1
+cn2 = 2
+cn3 = 3
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
+C = cn1 + cn2 + cn3
+print(r"The concatenation of 1, 2 and 3 is:   ", C)
+print("\n")
 
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
+"""There is no deference of between a = 3 ; a = 2 + 3   a += 2; ok ??? """
 
-# SageMath parsed files
-*.sage.py
+# Square
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+''' This is the Area of a Square'''
 
-# Spyder project settings
-.spyderproject
-.spyproject
+# The Area
 
-# Rope project settings
-.ropeproject
+a = float(input("Insert the length of one arm:   "))
+area = a * a
+print("The Area of the square is:   ", area)
+print("\n")
 
-# mkdocs documentation
-/site
+# The Circumferences of square
+circumferences = 4 * a
+print("The circumferences of the qube of that square is:", circumferences)
+print("\n")
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+# The Volume of the cube
 
-# Pyre type checker
-.pyre/
+volume = pow(a, 3)
+print("The volume of the square is:   ", volume)
+print("\n")
+
+# The Temperature Measurement
+# Fahrenheit
+c = float(input("Insert the Celsius value:   "))
+F = 1.4 * c + 32
+K = c + 273.15
+print("The Fahrenheit Value of the Celsius is:   ", F)
+print("\n")
+print("The Kelvin value of temperature is:   ", K)
+print("\n")
+
+# Celsius
+f = float(input("Insert the Fahrenheit value:   "))
+C = (f-32)/1.4
+K = ((f-32)/1.4) + 273.15
+print("The Celsius value of The temperature is:   ", C)
+print("\n")
+
+print("The Kelvin value of the temperature is:   ", K)
+print("\n")
+
+# Kelvin
+k: float = float(input("Insert the  Kelvin value:   "))
+C = k - 273.15
+F = ((k - 273.15) * 1.4) + 32
+print("The Celsius value of the temperature is:   ", C)
+print("\n")
+
+print("The Fahrenheit valur of the temperature is:   ", F)
